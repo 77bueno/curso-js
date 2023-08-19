@@ -1,2 +1,3 @@
-# curso-js
-Repositório em função das aulas no curso de JS
+# Repositório em função das aulas no curso de JS
+
+**Aulas de JavaScript**
