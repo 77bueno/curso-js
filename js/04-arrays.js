@@ -19,3 +19,12 @@ console.log(`Atualmente gosto mais do ${artistas[0]}, e não ouço o ${artistas[
 
 // Concatenação
 console.log("Ouço bastante o "+artistas[3]+", e não ouço o "+artistas[1]+".");
+
+// Matrizes (Arrays com 2 ou mais dimensões)
+let linguagens = [
+    ["HTML", "CSS", "JS"],
+    ["PHP", "ASP.Net", "Java", "Python"]
+];
+
+console.log(`${linguagens[0][1]} é para estilos.😎`);
+console.log(linguagens[1][0]+" é para back-end.😎");
