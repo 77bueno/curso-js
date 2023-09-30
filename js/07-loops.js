@@ -16,8 +16,14 @@ while( i <= 5) {
 } */
 
 // Exemplo 2: Do/While
-let i = 1;
+/* let i = 1;
 do {
     alert("Olaaa");
     i++; // Incremento
 } while (i <= 10);
+*/
+
+// Exemplo 3: For
+/* for (i = 1; i <= 5; i++) {
+    console.log(`Contador vale ${i}`);
+}  */
