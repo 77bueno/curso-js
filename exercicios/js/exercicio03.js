@@ -1,6 +1,6 @@
 // Exercicio 
 
-let salario = 1200;
+let salario = 3000;
 let novoSalario;
 
 if (salario < 1500) {
@@ -11,4 +11,4 @@ if (salario < 1500) {
     novoSalario = salario * 1.05;
 }
 
-console.log(`Seu antigo salario era de ${salario}, e foi reajustado para ${novoSalario}! 😎`);
+console.log(`Seu antigo salario era de ${salario}, e foi reajustado para ${novoSalario.toFixed(2)}! 😎`);
