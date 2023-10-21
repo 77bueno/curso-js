@@ -83,3 +83,10 @@ for (let programa of listaDeEditores) {
     // 3) Adicionar à lista
     lista.appendChild(item);
 }
+
+const linksReferencias = document.querySelectorAll(".referencias li a");
+
+for (let link of linksReferencias) {
+    // "Setando/ colocando" o atributo "target" com o valor "_blank"
+    link.setAttribute("target", "_blank");
+}
