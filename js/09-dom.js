@@ -29,7 +29,7 @@ const sobreFront = document.querySelector("#sobre");
 
 /* Mini Exercício */
 
-const back = document.querySelector(".back");
+const back = document.querySelector(".back-end");
 const editores = document.querySelector("div h2");
 
 console.log(back, editores);
@@ -51,3 +51,35 @@ legenda.textContent = "DOM - Hierarquia Geral";
 
 // Alterando com suporte à HTML
 sobreFront.innerHTML = "<i>Front-End</i>";
+
+// CSS INLINE via JavaScript 
+back.style.color = "rgb(167, 128, 240)";
+back.style.textAlign = "center";
+
+titulo.classList.add("destaque");
+
+let listaDeEditores = [
+    "VSCODE", 
+    "Notepad++", 
+    "Sublime Text",
+    "Atom",
+    "DreamWeaver",
+    "PHP Storm",
+    "Word"
+];
+
+// Selecionando a lista vazia através da classe
+const lista = document.querySelector(".lista");
+console.log(lista);
+
+// Percorrer o array usando o loop for/of
+for (let programa of listaDeEditores) {
+    // 1) Criar um novo elemento <li>
+    let item = document.createElement("li");
+
+    // 2) Adicionar conteúdo para ao novo elemento
+    item.innerHTML = programa;
+
+    // 3) Adicionar à lista
+    lista.appendChild(item);
+}
