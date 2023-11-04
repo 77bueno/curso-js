@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04 - DOM e Eventos</title>
+    <style>
+        body {
+            background-color: rgb(26, 25, 25);
+        }
+
+        #sessao {
+            background-color: #fff;
+            border-radius: 4px;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            position: relative;
+            top: 10rem;
+            padding-top: 1rem;
+        }
+
+        #botoes {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1.5rem 0 3rem 0;
+        }
+
+        #btAzul {
+            background-color: blue;
+            padding: 2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: black 2px solid;
+        }
+
+        #btLaranja {
+            background-color: orange;
+            padding: 2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: black 2px solid;
+        }
+
+        #btRosa {
+            background-color: pink;
+            padding: 2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: black 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <section id="sessao">
+        <h1> Escolhendo a cor e exibindo seu significado </h1>
+        <hr>
+        
+        <section id="botoes">
+            <button id="btAzul" type="submit">Clique aqui </button>
+            <button id="btLaranja" type="submit">Clique aqui</button>
+            <button id="btRosa" type="submit">Clique aqui</button>
+        </section>
+    </section>
+
+    <script src="js/exercicio04.js"></script>
+</body>
+</html>
