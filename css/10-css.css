@@ -1,0 +1,23 @@
+.sair{
+    background-color: red;
+    color: aliceblue;
+    font-size: 32px;
+}
+
+#janela{
+    border-color: red;
+    border-width: 10px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    top: 50px;
+}
+
+::backdrop{
+    background-color: rgba(0, 0, 0,0.6);
+}
+
+.modoNoturno{
+    background-color: black;
+    color: aliceblue;
+}
