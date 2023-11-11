@@ -5,8 +5,11 @@ const formulario = document.querySelector('form');
 const campoPalpite = document.querySelector("#palpite");
 const resultado = document.querySelector('#resultado');
 const imagem = document.querySelector('#imagem');
+const audio = document.querySelector('#audio');
 const faustao = "faustao.gif";
 const miseravi = "miseravi.gif";
+const miseraviAudio = "audios/acertou-mizeravijk.mp3";
+const faustaoAudio = "audios/faustao-errou.mp3";
 
 
 /* Gerar valores aleatórios */
@@ -34,13 +37,14 @@ formulario.addEventListener("submit", function(event){
         resultado.style.color = "blue";
         pagina.style.backgroundColor = "lightblue";
         imagem.src = miseravi;
-        
-        // console.log("Acertou fih duma egua!😢");
+        audio.src = miseraviAudio;
+        resultado.style.animation = "heartBeat 3s infinite";
     } else {
         resultado.textContent = "Erroou mané! 😢";
         resultado.style.color = "red";
         pagina.style.backgroundColor = "salmon";
         imagem.src = faustao;
-        // console.log("Errou ze mane! 😂");
+        audio.src = faustaoAudio;
+        resultado.style.animation = "shakeX 3s infinite";
     }
 });
