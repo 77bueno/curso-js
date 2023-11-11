@@ -5,9 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jogo da Advinhação</title>
-
+<!-- Importando a biblioteca Animate CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 <style>
-body { font-family: 'Segoe UI', Verdana; }
+body {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: rgb(28, 50, 64);
+    }
 
 .container {
     width: 80%;
@@ -17,6 +21,8 @@ body { font-family: 'Segoe UI', Verdana; }
     border: solid 1px;
     text-align: center;
     background-color: white;
+    position: relative;
+    top: 15rem;
 }
 
 form {
@@ -24,6 +30,17 @@ form {
     background-color: #ccc;
     width: 80%;
     margin: auto;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 6px;
+    background-color: rgb(47, 75, 92);
 }
 
 input {
@@ -36,14 +53,14 @@ input {
 </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Jogo da Adivinhação </h1>
+    <div class="container animate__animated animate__pulse">
+        <h1 class="">Jogo da Adivinhação </h1>
         <p>Tente advinhar o número que o computador escolheu.</p>
     
         <form action="" method="post">
-            <label for="palpite">Seu palpite:</label> <br>
+            <label class="form-label" for="palpite">Seu palpite:</label> <br>
             <input type="number" id="palpite" required> <br>
-            <button type="submit">Palpitar</button>
+            <button class="btn btn-dark mt-4" type="submit button">Palpitar</button>
         </form>
     
         <h2 id="resultado"></h2>
@@ -51,7 +68,6 @@ input {
         <img id="imagem" src="" alt="">
     </div>
 
-    <script src=""></script>
-    
+    <script src="js/11-jogo.js"></script>
 </body>
 </html>
