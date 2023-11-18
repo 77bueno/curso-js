@@ -30,13 +30,16 @@ formulario.addEventListener('submit', function(event){
     let media = (nota1 + nota2) / 2;
 
     /* Verificando a situação do aluno de acordo a média */
-    let situacao; // undefined 
+    let situacao, classe; // undefined 
     if (media >= 7) {
         situacao = "aprovado(a)";
+        classe = 'aprovado';
     } else if (media >= 5) {
         situacao = "recuperação"; 
+        classe = 'recuperacao';
     } else {
         situacao = "reprovado(a)";
+        classe = 'reprovado';
     }
 
     /* Rotinas para criar uma nova linha e colunas
@@ -44,6 +47,7 @@ formulario.addEventListener('submit', function(event){
 
     // 1) Criar Elemento
     let linha = document.createElement("tr");
+    linha.classList.add(classe);
 
     // 2) Montar o conteúdo do elemento
     linha.innerHTML = 
@@ -59,12 +63,4 @@ formulario.addEventListener('submit', function(event){
 
     // Devolver o foco do cursor para o nome
     campoNome.focus();
-
-    if (media >= 7) {
-        linha.classList.add('aprovado');
-    } else if (media >= 5) {
-        linha.classList.add('recuperacao');
-    } else {
-        linha.classList.add('reprovado');
-    }
 });
