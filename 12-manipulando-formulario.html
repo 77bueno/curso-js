@@ -14,60 +14,79 @@
         padding: 0.8rem;
     }
     
-    table { width: 300px; }
-    
-    th {
-        background-color: black;
-        color: white;
-    }
-    
     caption { 
         margin-bottom: 0.5rem;
         font-weight: bold;
     }
-    
+    #sessao {
+            width: 80%; /* Ajuste a largura conforme necessário */
+            text-align: center;
+            border: 1px solid #ccc; /* Adicione uma borda para visualização */
+            padding: 20px;
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+    .tituloExercicio {
+        margin: 1rem 0 1rem 0;
+        text-align: center;
+    }
+
+        /* Estilos adicionais para a tabela e formulário, se necessário */
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
    
     </style>
 </head>
 <body>
-    <h1>Formulário (simulação de cadastro)</h1>
-    
-    <form action="" method="post" autocomplete="off">
-        <p>
-            <label for="nome">Nome do aluno:</label> 
-            <input required placeholder="Informe o nome" maxlength="30" type="text" name="nome" id="nome">
-        </p>
+    <h2 class="tituloExercicio">Exercício de JS - Form's</h2>
+    <section id="sessao">
+        <h1>Formulário (simulação de cadastro)</h1>
+        
+        <form action="" method="post" autocomplete="off">
+            <p>
+                <label for="nome">Nome do aluno:</label> 
+                <input required placeholder="Informe o nome" maxlength="30" type="text" name="nome" id="nome">
+            </p>
 
-        <p>
-            <label for="nota1">Nota 1:</label>
-            <input required type="number" name="nota1" id="nota1" min="0" max="10" step="0.1">
-       
-            <label for="nota2">Nota 2:</label>
-            <input required type="number" name="nota2" id="nota2" min="0" max="10" step="0.1">
-        </p>
+            <p>
+                <label for="nota1">Nota 1:</label>
+                <input required type="number" name="nota1" id="nota1" min="0" max="10" step="0.1">
+        
+                <label for="nota2">Nota 2:</label>
+                <input required type="number" name="nota2" id="nota2" min="0" max="10" step="0.1">
+            </p>
 
-        <button type="submit" id="enviar" name="enviar">Enviar dados</button>
-    </form>
+            <button type="submit" id="enviar" name="enviar">Enviar dados</button>
+        </form>
 
-    <hr>
+        <hr>
 
-    <table>
-        <caption>Relatório de Alunos</caption>
+        <table hidden>
+            <caption>Relatório de Alunos</caption>
 
-        <thead>
-            <tr>
-                <th>Nome</th> 
-                <th>Média</th>
-                <th>Situação</th>
-            </tr>
-        </thead>
+            <thead>
+                <tr>
+                    <th>Nome</th> 
+                    <th>Média</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
 
-        <tbody></tbody>
+            <tbody></tbody>
 
-    </table>    
-    
+        </table>    
+    </section>
 
-   <script src=""></script>
+   <script src="js/12-formulario.js"></script>
 
 </body>
 </html>
