@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JavaScript - Formulário</title>
 <style>
-    body { font-family: 'Segoe UI', Verdana; }
+    body {
+        font-family: 'Segoe UI', Verdana; 
+        background-color: lightslategray;
+    }
     
     table, td, th, tr {
         border: solid 1px black;
@@ -19,12 +22,14 @@
         font-weight: bold;
     }
     #sessao {
-            width: 80%; /* Ajuste a largura conforme necessário */
+            width: 50%; /* Ajuste a largura conforme necessário */
             text-align: center;
             border: 1px solid #ccc; /* Adicione uma borda para visualização */
             padding: 20px;
             box-sizing: border-box;
             margin: auto;
+            background-color: #fff;
+            border-radius: 4px;
         }
 
     .tituloExercicio {
@@ -37,6 +42,21 @@
             width: 300px;
             border-collapse: collapse;
             margin: auto;
+        }
+
+        .aprovado td {
+            background-color: lightskyblue;
+            color: blue;
+        }
+
+        .reprovado td {
+            background-color: lightcoral;
+            color: red;
+        }
+
+        .recuperacao td {
+            background-color: lightgoldenrodyellow;
+            color: gold;
         }
    
     </style>

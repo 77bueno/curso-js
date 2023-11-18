@@ -33,6 +33,8 @@ formulario.addEventListener('submit', function(event){
     let situacao; // undefined 
     if (media >= 7) {
         situacao = "aprovado(a)";
+    } else if (media >= 5) {
+        situacao = "recuperação"; 
     } else {
         situacao = "reprovado(a)";
     }
@@ -57,4 +59,12 @@ formulario.addEventListener('submit', function(event){
 
     // Devolver o foco do cursor para o nome
     campoNome.focus();
+
+    if (media >= 7) {
+        linha.classList.add('aprovado');
+    } else if (media >= 5) {
+        linha.classList.add('recuperacao');
+    } else {
+        linha.classList.add('reprovado');
+    }
 });
