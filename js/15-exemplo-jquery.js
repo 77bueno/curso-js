@@ -54,5 +54,8 @@ formulario.on("submit", function(event){
     pagina.css("background-color", cor)
 
     // Personalizando o titulo
-    titulo.html(`Olá <b>${usuario}</b>, você escolhou ${textoDaCor}`);
+    titulo
+    .hide()
+    .html(`Olá <b>${usuario}</b>, você escolhou ${textoDaCor}`)
+    .fadeIn(3500)
 });
