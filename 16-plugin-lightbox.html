@@ -31,7 +31,17 @@
         <p>Referência: <a href="https://lokeshdhakar.com/projects/lightbox2/" target="_blank">Lightbox</a></p>
 
         <!-- Estrutura da Galeria -->
-
+        <div class="galeria">
+            <a href="imagens/apple.jpg" data-lightbox="fotos" data-title="Texto 1...">
+                <img src="imagens/mini-apple.jpg" alt="">
+            </a>
+            <a href="imagens/ibm.jpg" data-lightbox="fotos" data-title="Texto 2..." >
+                <img src="imagens/mini-ibm.jpg" alt="">
+            </a>
+            <a href="imagens/microsoft.jpg" data-lightbox="fotos" data-title="Texto 3...">
+                <img src="imagens/mini-microsoft.jpg" alt="">
+            </a>
+        </div>
     </div>
 
 <!-- Importação da Biblioteca jQuery -->
@@ -39,5 +49,12 @@
 
 <!-- Importação do JS ligthbox -->
 <script src="lightbox/js/lightbox.min.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'albumLabel': "Imagem %1 de %2"
+    })
+</script>
 </body>
 </html>
